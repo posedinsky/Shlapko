@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найвідоміші туристичні місця України</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="jQuery.js"></script>
+
+</head>
+
+<div class="header">
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+    </div>
+    <div class="navigation" id="navigation">
+        <a href="index.html" class="texxt">Головна</a>
+        <a href="index1.html" class="texxt">Про місця</a>
+        <a href="index2.html" class="texxt">Галерея зображень</a>
+        <a href="index3.html" class="texxt">Новини</a>
+        <a href="index4.html" class="texxt">Контакти</a>
+    </div>
+    <img src="logo.jpg" alt="Logo" class="logo">
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: url(back.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hh1 {
+        color: #fffefe;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .gallery-item:hover .image-overlay {
+        opacity: 1;
+    }
+
+    .text {
+        font-family: cursive;
+        color: OldLace;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .image-overlay-content h2 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .image-overlay-content p {
+        color: #ccc;
+        font-size: 14px;
+    }
+
+</style>
+    <h1>Світлини та інформація про місцевість</h1>
+<div class="container">
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="a1.jpg" alt="Зображення 1">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Острів Хортиця - колиска козацтва</h2>
+                    <p>Серед 230 островів, що розкинулися у пониззі Дніпра, завжди виділявся своїми розмірами і красою острів Хортиця.
+                        На цьому острові залишили свої сліди тисячоліття людської історії.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a2.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Одеса - перлина біля моря</h2>
+                    <p>Про це місто можна говорити нескінченно довго. Обговорювати його неповторний національний колорит,
+                        непередбачуваність, історію, загадкові наповнені легендами вулиці і багато іншого, можна дуже довго.
+                        Для туристів є як історичні пам'ятки, так і безліч інших цікавих місць.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a3.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Львів</h2>
+                    <p>Львів— місто в Україні, адміністративний центр області, агломерації, району, міської громади,
+                        національно-культурний та освітньо-науковий осередок країни, великий промисловий центр і транспортний вузол,
+                        вважається столицею Галичини та центром Західної України. За кількістю населення — сьоме місто країни</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a4.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Карпати</h2>
+                    <p>Карпа́ти— гірська система на сході Центральної Європи, на території: України, Угорщини, Чехії, Польщі,
+                        Словаччини, Румунії, Сербії, та Австрії. Простягається від околиць Братислави до Залізних Воріт на 1500 км,
+                        утворюючи опуклу дугу, що замикає Середньодунайську рівнину.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a5.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Кам'яні могили</h2>
+                    <p>Запові́дник «Кам'яні́ Моги́ли» — відділення Українського державного степового природного заповідника
+                        Національної академії наук України. Заснований 5 квітня 1927 року як особлива природоохоронна територія
+                        місцевого значення, зараз посів чільне місце як історична і природна пам'ятка України.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a6.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Оптимістична печера в Тернопільській області</h2>
+                    <p>Оптимісти́чна — гіпсова печера в Тернопільській області України; геологічна пам'ятка природи загальнодержавного значення.
+                        Розташована в межах Чортківського району, на південний захід від села Королівка, в лісовому урочищі «Королівка» (Шупарське лісництво, кв. 2, вид. 7).
+                        Це найдовша у світі гіпсова печера, яка увійшла до Книги рекордів Гіннеса.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a7.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Острів Джарилгач</h2>
+                    <p>Джарилга́ч (крим. Carılğaç) — острів у Каркінітській затоці Чорного моря. Найбільший острів України
+                        та Чорного моря. Адміністративно належить до Скадовського району Херсонської області. Вся територія острова
+                        та частина прилеглої акваторії входить у Національний природний парк «Джарилгацький».</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a8.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Катакомби в Холодній Балці</h2>
+                    <p>Одне з найпопулярніших шахтних полів під селом Холодна Балка. Вироблення досить великих розмірів
+                        та має багато цікавих місць. А унікальним воно вважається бо саме тут, у катакомбах Холодної Балки,
+                        точилися жорстокі партизанські бої.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a9.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Степовий заповідник Асканія-Нова</h2>
+                    <p>Біосферний заповідник «Асканія-Нова» ім. Фальц-Фейна — науково-дослідна установа в системі Національної академії аграрних наук України, державний заповідник, заснований 1898 року Фрідріхом Фальц-Фейном.
+
+                        Назву місцевості дав один з її попередніх власників — герцог Фрідріх Фердинанд Ангальт-Кетен-Плесський у 1841 році на честь власного маєтку Асканії в Німеччині. Звідти — «Асканія-Нова».</p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Більше цікавих фактів і світлин:</h3>
+                <p>На сайті: https://khers-on.com/ua/blog/top-15-samyh-interesnyh-mest-ukrainy/</p>
+            </div>
+        </div>
+
+        <div class="caption">
+            <button class="open-modal">Більше ...</button>
+        </div>
+</body>
+</html>

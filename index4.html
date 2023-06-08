@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найвідоміші туристичні місця України</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="jQuery.js"></script>
+
+</head>
+
+<div class="header">
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+    </div>
+    <div class="navigation" id="navigation">
+        <a href="index.html" class="texxt">Головна</a>
+        <a href="index1.html" class="texxt">Про місця</a>
+        <a href="index2.html" class="texxt">Галерея зображень</a>
+        <a href="index3.html" class="texxt">Новини</a>
+        <a href="index4.html" class="texxt">Контакти</a>
+    </div>
+    <img src="logo.jpg" alt="Logo" class="logo">
+</div>
+<main>
+
+    <section>
+        <h2>Контакти</h2>
+        <p class="text">Зв'яжіться з нами за допомогою наступних контактних даних:</p>
+        <ul>
+            <li class="text"><strong>Email:</strong> kontakt@gmail.com</li>
+            <li class="text"><strong>Телефон:</strong> +1234567890</li>
+            <li class="text"><strong>Адреса:</strong> вул. Будівельна 64/7, Полтава, Україна</li>
+        </ul>
+        <p class="text">Або скористайтесь нашою контактною формою:</p>
+        <form>
+            <label for="name" class="text">Ім'я:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email" class="text">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message" class="text">Повідомлення:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <input type="submit" value="Надіслати">
+
+        </form>
+        <div>
+            <h2>Контактне обличчя Шлапко Микита:</h2>
+            <div>
+            <img src="nik.jpg" class="nik">
+                </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2023 Найвідоміші туристичні місця України</p>
+</footer>
+
+</body>
+</html>
